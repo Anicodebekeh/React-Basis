@@ -1,7 +1,8 @@
-import Chicken from './Chicken'
+
 import './App.css'
 import Game from './game'
 import ShoppingList from './ShoppingList'
+import Button from './Buttons'
 
 
 const items =[
@@ -16,9 +17,10 @@ function App() {
 
   return (
   <div>
-     <Chicken />
      <Game val1 = '🥕' val2 = '🥕' val3 = '🥕'/>
      <ShoppingList items={items}/>
+     <Button button="click me" message="hey how are you today"/>
+     
   </div>
   )
 }
