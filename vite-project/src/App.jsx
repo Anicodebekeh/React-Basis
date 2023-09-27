@@ -4,6 +4,7 @@ import Game from './game'
 import ShoppingList from './ShoppingList'
 import Button from './Buttons'
 import Toggler from './Toggler'
+import Box from './Box'
 
 
 const items =[
@@ -12,16 +13,21 @@ const items =[
   {id:3, item:"meat", qty:2, completed: true},
 ]
 
+const colors =[
+  'green', 'red', 'brown', 'purple', 'pink', 'orange'
+]
+
 function App() {
 
 
 
   return (
   <div>
-     <Game val1 = '🥕' val2 = '🥕' val3 = '🥕'/>
-     <ShoppingList items={items}/>
+     {/* <Game val1 = '🥕' val2 = '🥕' val3 = '🥕'/>
+     <ShoppingList items={items}/> */}
      <Button button="click me" message="hey how are you today"/>
      <Toggler/>
+     <Box color={colors}/>
   </div>
   )
 }
