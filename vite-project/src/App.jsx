@@ -3,6 +3,7 @@ import './App.css'
 import Game from './game'
 import ShoppingList from './ShoppingList'
 import Button from './Buttons'
+import Toggler from './Toggler'
 
 
 const items =[
@@ -20,7 +21,7 @@ function App() {
      <Game val1 = '🥕' val2 = '🥕' val3 = '🥕'/>
      <ShoppingList items={items}/>
      <Button button="click me" message="hey how are you today"/>
-     
+     <Toggler/>
   </div>
   )
 }
