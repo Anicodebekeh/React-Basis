@@ -1,11 +1,16 @@
 import { useState } from 'react'
 import './Box.css'
+
+const colorIdx = (arr)=>{
+    const idx =Math.floor(Math.random()*arr.length);
+    return arr[idx]
+        
+}
 export default function Box({color}){
-    const [newColor, setNewColor]= useState('green')
+    const [newColor, setNewColor]= useState(colorIdx(color))
 
     const changeColorBox= ()=>{
-        const idx =Math.floor(Math.random()*color.length);
-        const randColor= color[idx]
+        const randColor = colorIdx(color)
         setNewColor(randColor)
     }
 

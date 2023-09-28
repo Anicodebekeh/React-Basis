@@ -5,6 +5,7 @@ import ShoppingList from './ShoppingList'
 import Button from './Buttons'
 import Toggler from './Toggler'
 import Box from './Box'
+import MultipleBox from './MultipleBox'
 
 
 const items =[
@@ -27,7 +28,9 @@ function App() {
      <ShoppingList items={items}/> */}
      <Button button="click me" message="hey how are you today"/>
      <Toggler/>
-     <Box color={colors}/>
+     <MultipleBox color={colors}/>
+  
+     
   </div>
   )
 }
