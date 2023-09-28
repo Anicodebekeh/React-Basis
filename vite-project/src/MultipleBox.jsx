@@ -1,12 +1,9 @@
 import Box from "./Box"
 
 export default function MultipleBox ({color}){
-    return(
-        <div>
-            <Box color={color}/>
-            <Box color={color}/>
-            <Box color={color}/>
-            <Box color={color}/>
-        </div>
-    )
+    const boxes = []
+    for (let i=0; i<25; i++){
+        boxes.push( <Box color={color}/>)
+    }
+    return <div>{boxes}</div>
 }
