@@ -28,7 +28,7 @@ function App() {
      <ShoppingList items={items}/> */}
      <Button button="click me" message="hey how are you today"/>
      <Toggler/>
-     <MultipleBox color={colors}/>
+     <MultipleBox color={colors} nums={25}/>
   
      
   </div>
