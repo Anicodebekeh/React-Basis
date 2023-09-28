@@ -3,9 +3,9 @@ import './Box.css'
 
 const colorIdx = (arr)=>{
     const idx =Math.floor(Math.random()*arr.length);
-    return arr[idx]
-        
+    return arr[idx]      
 }
+
 export default function Box({color}){
     const [newColor, setNewColor]= useState(colorIdx(color))
 
