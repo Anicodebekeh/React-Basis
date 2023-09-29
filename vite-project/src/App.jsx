@@ -7,6 +7,7 @@ import Toggler from './Toggler'
 import Box from './Box'
 import MultipleBox from './MultipleBox'
 import Player from './Players'
+import EmojiCliker from './EmojiClicker'
 
 
 const items =[
@@ -31,6 +32,7 @@ function App() {
      <Toggler/>
      <MultipleBox color={colors} nums={25}/>
      <Player/>
+     <EmojiCliker/>
   </div>
   )
 }
