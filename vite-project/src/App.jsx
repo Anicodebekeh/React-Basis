@@ -8,6 +8,7 @@ import Box from './Box'
 import MultipleBox from './MultipleBox'
 import Player from './Players'
 import EmojiCliker from './EmojiClicker'
+import Score from './Score'
 
 
 const items =[
@@ -33,6 +34,7 @@ function App() {
      <MultipleBox color={colors} nums={25}/>
      <Player/>
      <EmojiCliker/>
+     <Score numPlayer={10} target={5}/>
   </div>
   )
 }
