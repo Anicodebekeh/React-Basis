@@ -7,7 +7,7 @@ const colorIdx = (arr)=>{
 }
 
 export default function Box({color}){
-    const [newColor, setNewColor]= useState(colorIdx(color))
+    const [newColor, setNewColor]= useState(()=> colorIdx(color))
 
     const changeColorBox= ()=>{
         const randColor = colorIdx(color)
